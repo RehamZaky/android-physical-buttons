@@ -30,12 +30,15 @@ class AndroidPhysicalButtons {
         case 'volume':
           a(Key.volume);
           break;
+        case 'any_key':
+          a(Key.any_key);
+          break;
       }
     }
   }
 }
 
 /// 按键
-enum Key { power, volume }
+enum Key { power, volume, any_key }
 
 typedef Handler = void Function(Key key);
